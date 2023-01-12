@@ -1,0 +1,21 @@
+@media only screen and (min-width: 32.5em) {
+  .header-container,
+  .footer-container {
+    width: 90%; /* Make the boxes around the header and footer wider */
+  }
+
+  .header-container h1,
+  main h2,
+  main li {
+    font-size: 1.2em; /* Increase the font size of the text */
+  }
+
+  main {
+    display: flex;
+    flex-direction: row; /* Change the layout of the main content to a row */
+  }
+
+  main ul {
+    flex: 1; /* Give the unordered list element all the available space */
+  }
+}

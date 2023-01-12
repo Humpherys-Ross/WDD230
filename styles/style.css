@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Federant&display=swap");
+
+body {
+  font-family: Federant, "Sci-Fi Font", sans-serif;
+  color: white;
+  background-color: #333333;
+  background-image: linear-gradient(to right, #b43131, #1f0d53);
+}
+
+.header-container,
+.footer-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 80px;
+  border: 1px solid #dddddd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #333333;
+  color: white;
+}
+
+.header-container img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #dddddd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h2 {
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px #777777;
+}
+
+main ul {
+  list-style-type: disc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main li {
+  margin-bottom: 10px;
+  color: white;
+  text-shadow: 2px 2px 4px #777777;
+}
+
+a {
+  color: #dddddd;
+}
+
+a:hover {
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #333333;
+  color: white;
+}
