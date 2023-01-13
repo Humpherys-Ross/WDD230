@@ -25,6 +25,19 @@ body {
   color: white;
 }
 
+section {
+  display: inline-block;
+  width: calc(100% / 3); /* divide the width by 3 to create 3 columns */
+  padding: 10px;
+  border: 2px solid #ccc; /* add a border */
+}
+
+img {
+  width: 100%; /* make the images the full width of the column */
+  height: auto; /* set a max-height to prevent the images from being too tall */
+  object-fit: cover; /* this will make the images fit within the column and maintain their aspect ratio */
+}
+
 footer {
   display: flex;
   flex-direction: column;
