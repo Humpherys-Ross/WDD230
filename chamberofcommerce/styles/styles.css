@@ -1,0 +1,24 @@
+:root {
+  /*colors: */
+  --primary-color: #333333;
+  --secondary-color: #2b3964;
+  --accent1-color: #420942;
+  --accent2-color: #f5f5f5;
+  --text-color1: rgb(175, 175, 170);
+  --text-color2: rgb(255, 255, 255);
+  --header-footer-bg: #333333;
+  /*container styles: */
+  --container-border: 1px solid #dddddd;
+  --container-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*fonts: */
+  --primary-font: "Federant", "Sci-Fi Font", sans-serif;
+  --secondary-font: "Sci-Fi Font", sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--text-color2);
+  background-color: var(--header-footer-bg);
+  background-image: linear-gradient(to right, #b43131, #1f0d53);
+}
