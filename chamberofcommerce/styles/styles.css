@@ -16,9 +16,50 @@
   --secondary-font: "Sci-Fi Font", sans-serif;
 }
 
+/*global styles*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*header styles*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+.header-container,
+.footer-container {
+  width: 80%;
+  margin: 0 auto;
+  border: var(--container-border);
+  box-shadow: var(--container-shadow);
+  background-color: var(--header-footer-bg);
+  color: var(--text-color2);
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
 body {
   font-family: var(--primary-font);
   color: var(--text-color2);
   background-color: var(--header-footer-bg);
   background-image: linear-gradient(to right, #b43131, #1f0d53);
+}
+
+/*footer styles*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+}
+
+#copyrightyear,
+#lastmod {
+  font-size: 0.8rem;
 }
