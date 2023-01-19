@@ -62,8 +62,6 @@ nav ul li a {
   padding: 0.75rem;
   text-decoration: none;
   font-size: 0.95rem;
-  background: linear-gradient(90deg, transparent, yellow, transparent) bottom /
-    var(--d, 0) 3px no-repeat;
   transition: 0.5s;
   float: left;
 }
@@ -77,6 +75,28 @@ body {
   color: var(--text-color2);
   background-color: var(--header-footer-bg);
   background-image: linear-gradient(to right, #b43131, #1f0d53);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo logo . . ."
+    "logo logo . . ."
+    ". . purpose purpose purpose"
+    ". . purpose purpose purpose"
+    ". . purpose purpose purpose";
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.purpose {
+  grid-area: purpose;
 }
 
 /*footer styles*/

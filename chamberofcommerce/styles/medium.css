@@ -1,0 +1,8 @@
+@media only screen and (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    width: 100%;
+  }
+}
