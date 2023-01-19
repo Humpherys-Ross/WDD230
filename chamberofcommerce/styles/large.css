@@ -44,6 +44,34 @@ header {
   text-align: center;
 }
 
+nav {
+  background-color: #36454f;
+  margin: 0 auto;
+  max-width: 780px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  background: linear-gradient(90deg, transparent, yellow, transparent) bottom /
+    var(--d, 0) 3px no-repeat;
+  transition: 0.5s;
+  float: left;
+}
+
+.active {
+  color: yellow;
+}
+
 body {
   font-family: var(--primary-font);
   color: var(--text-color2);
