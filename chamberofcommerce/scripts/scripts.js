@@ -8,14 +8,23 @@ document.getElementById("lastmod").textContent = document.lastModified;
 
 // Data objects
 const data1 = [
-  { Persona: "Persona1" },
-  { Photo: "Image1" },
-  { Detail1: "information3" },
+  { Persona: "Small Business Owner" },
+  { Photo: "/images/businessman.jpg" },
+  { "Fictional Name": "John Brown" },
+  { "Job Title": "Prospective Bakery Owner" },
+  { "Business Name": "Brown's Bakery" },
+  { "Goals for Business": "To open a bakery in the downtown area" },
+  {
+    Environment:
+      "Works hard and puts a lot of attention to detail for his baked goods.",
+  },
 ];
 const data2 = [
-  { Persona: "Persona2" },
-  { Photo: "Image2" },
-  { Detail1: "information7" },
+  { Persona: "Family of three" },
+  { Photo: "/imageS/family.jpg" },
+  { "Fictional Name": "The Robertsons" },
+  { "Reasons for moving": "To find a good neighborhood to raise their child" },
+  { "Goals for the new home": "To find a home with a good school district" },
 ];
 
 // Function to create table
@@ -29,7 +38,14 @@ function createTable(data, containerId) {
       const cell2 = row.insertCell();
       const key = Object.keys(data[i])[j];
       cell1.innerHTML = key;
-      cell2.innerHTML = data[i][key];
+      if (
+        key === "Photo" &&
+        (data[i][key].startsWith("/") || data[i][key].startsWith("https"))
+      ) {
+        cell2.innerHTML = `<img src="${data[i][key]}" alt="${key}">`;
+      } else {
+        cell2.innerHTML = data[i][key];
+      }
     }
   }
   // Append table to page
