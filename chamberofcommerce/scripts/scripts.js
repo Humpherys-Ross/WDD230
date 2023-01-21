@@ -9,7 +9,7 @@ document.getElementById("lastmod").textContent = document.lastModified;
 // Data objects
 const data1 = [
   { Persona: "Small Business Owner" },
-  { Photo: "/images/businessman.jpg" },
+  { Photo: "../images/businessman.jpg" },
   { "Fictional Name": "John Brown" },
   { "Job Title": "Prospective Bakery Owner" },
   { "Business Name": "Brown's Bakery" },
@@ -21,7 +21,7 @@ const data1 = [
 ];
 const data2 = [
   { Persona: "Family of three" },
-  { Photo: "/imageS/family.jpg" },
+  { Photo: "../imageS/family.jpg" },
   { "Fictional Name": "The Robertsons" },
   { "Reasons for moving": "To find a good neighborhood to raise their child" },
   { "Goals for the new home": "To find a home with a good school district" },
@@ -40,7 +40,7 @@ function createTable(data, containerId) {
       cell1.innerHTML = key;
       if (
         key === "Photo" &&
-        (data[i][key].startsWith("/") || data[i][key].startsWith("https"))
+        (data[i][key].startsWith("../") || data[i][key].startsWith("https"))
       ) {
         cell2.innerHTML = `<img src="${data[i][key]}" alt="${key}">`;
       } else {
