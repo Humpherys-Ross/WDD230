@@ -2,6 +2,7 @@
 #table-container-2 table {
   border-collapse: collapse;
   width: 100%;
+  margin-top: 5px;
 }
 
 #table-container-1 th,
