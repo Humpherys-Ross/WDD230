@@ -21,7 +21,7 @@ const data1 = [
 ];
 const data2 = [
   { Persona: "Family of three" },
-  { Photo: "../imageS/family.jpg" },
+  { Photo: "../images/family.jpg" },
   { "Fictional Name": "The Robertsons" },
   { "Reasons for moving": "To find a good neighborhood to raise their child" },
   { "Goals for the new home": "To find a home with a good school district" },
