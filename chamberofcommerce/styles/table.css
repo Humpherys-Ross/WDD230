@@ -1,0 +1,26 @@
+#table-container-1 table,
+#table-container-2 table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table-container-1 th,
+#table-container-2 th,
+#table-container-1 td,
+#table-container-2 td {
+  border: 1px solid var(--secondary-color);
+  padding: 10px;
+  text-align: left;
+}
+
+#table-container-1 th,
+#table-container-2 th {
+  background-color: var(--accent2-color);
+  color: var(--headline-color-on-color);
+  font-weight: bold;
+}
+
+#table-container-1 tr:nth-child(even),
+#table-container-2 tr:nth-child(even) {
+  background-color: var(--accent1-color);
+}
