@@ -24,7 +24,7 @@ const assignments = [
   {
     week: "Week 03",
     title: "Chamber of Commerce",
-    link: "/chamberofcommerce/index.html",
+    link: "chamberofcommerce/index.html",
   },
   // Add more objects for additional assignments
 ];
