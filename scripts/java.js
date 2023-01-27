@@ -23,8 +23,13 @@ const assignments = [
   },
   {
     week: "Week 03",
-    title: "Chamber of Commerce",
+    title: "Chamber of Commerce Site Plan",
     link: "chamberofcommerce/index.html",
+  },
+  {
+    week: "Week 04",
+    title: "Chamber of Commerce Site",
+    link: "chamber/index.html",
   },
   // Add more objects for additional assignments
 ];
