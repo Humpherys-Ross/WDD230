@@ -1,4 +1,4 @@
-@media only screen and (min-width: 37.5em) {
+@media (min-width: 37.5em) {
   .info p,
   aside {
     flex-direction: row;
