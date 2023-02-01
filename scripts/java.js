@@ -34,7 +34,7 @@ const assignments = [
   {
     week: "Week 05",
     title: "Lesson 05",
-    link: "../lesson5/index.html",
+    link: "lesson5/index.html",
   },
   // Add more objects for additional assignments
 ];
