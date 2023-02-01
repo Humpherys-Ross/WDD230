@@ -32,8 +32,8 @@ body {
   min-height: 200px;
   background-image: linear-gradient(
     to right,
-    hsl(211, 100%, 50%),
-    hsl(179, 100%, 30%)
+    hsl(9, 94%, 33%),
+    hsl(229, 87%, 28%)
   );
   z-index: 1;
 }
@@ -47,8 +47,8 @@ body {
   left: 0;
   background-image: linear-gradient(
     to bottom,
-    hsl(344, 100%, 50%),
-    hsl(31, 100%, 40%)
+    hsla(290, 91%, 35%, 0.527),
+    hsla(204, 100%, 40%, 0.658)
   );
   z-index: -1;
   transition: opacity 0.5s linear;
