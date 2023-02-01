@@ -1,10 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Federant&display=swap");
 
+/* * {
+  border: 1px dashed white;
+} */
+
 body {
   font-family: Federant, "Sci-Fi Font", sans-serif;
   color: white;
   background-color: #333333;
   background-image: linear-gradient(to right, #b43131, #1f0d53);
+  transition: background-color 10s ease-out;
+  border: 1px solid #dddddd;
+}
+
+body:active {
+  background-image: linear-gradient(to right, #158550, #5228d1);
+  cursor: pointer;
 }
 
 .header-container,
