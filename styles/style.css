@@ -10,6 +10,23 @@ body {
   border: 1px solid #dddddd;
 }
 
+/* .background {
+  background-image: linear-gradient(
+    to right,
+    hsl(211, 100%, 50%),
+    hsl(179, 100%, 30%)
+  );
+  transition: background-image 0.5s linear;
+}
+
+.background:hover {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(344, 100%, 50%),
+    hsl(31, 100%, 40%)
+  );
+} */
+
 .background {
   position: relative;
   min-height: 200px;
