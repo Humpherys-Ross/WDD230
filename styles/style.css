@@ -7,15 +7,39 @@
 body {
   font-family: Federant, "Sci-Fi Font", sans-serif;
   color: white;
-  background-color: #333333;
-  background-image: linear-gradient(to right, #b43131, #1f0d53);
-  transition: background-color 10s ease-out;
   border: 1px solid #dddddd;
 }
 
-body:active {
-  background-image: linear-gradient(to right, #158550, #5228d1);
-  cursor: pointer;
+.background {
+  position: relative;
+  min-height: 200px;
+  background-image: linear-gradient(
+    to right,
+    hsl(211, 100%, 50%),
+    hsl(179, 100%, 30%)
+  );
+  z-index: 1;
+}
+
+.background::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(344, 100%, 50%),
+    hsl(31, 100%, 40%)
+  );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.background:hover::before {
+  opacity: 1;
 }
 
 .header-container,
