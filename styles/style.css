@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Federant&display=swap");
 
-/* * {
-  border: 1px dashed white;
-} */
+* {
+  /* border: 1px dashed white; */
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: Federant, "Sci-Fi Font", sans-serif;
@@ -89,6 +91,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* border: 1px solid black; */
 }
 
 main h2 {
