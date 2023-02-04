@@ -60,7 +60,7 @@ document.querySelector(".banner-close").addEventListener("click", function () {
 
 let day = d.getDay();
 
-if (day == 1 || day == 2) {
+if (day == 2 || day == 3) {
   let banner = document.querySelector(".banner-container");
   banner.style.display = "block";
 
