@@ -33,7 +33,7 @@ const assignments = [
   },
   {
     week: "Week 05",
-    title: "Lesson 05",
+    title: "DOM Manipulation",
     link: "lesson5/index.html",
   },
   {
