@@ -54,10 +54,6 @@ const x = document.getElementById("menu-button");
 
 x.onclick = toggleMenu;
 
-document.querySelector(".banner-close").addEventListener("click", function () {
-  this.closest(".banner-container").style.display = "none";
-});
-
 let day = d.getDay();
 
 if (day == 2 || day == 3) {
