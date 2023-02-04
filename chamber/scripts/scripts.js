@@ -53,3 +53,23 @@ function toggleMenu() {
 const x = document.getElementById("menu-button");
 
 x.onclick = toggleMenu;
+
+document.querySelector(".banner-close").addEventListener("click", function () {
+  this.closest(".banner-container").style.display = "none";
+});
+
+let day = d.getDay();
+
+if (day == 1 || day == 2) {
+  let banner = document.querySelector(".banner-container");
+  banner.style.display = "block";
+
+  document
+    .querySelector(".banner-close")
+    .addEventListener("click", function () {
+      this.closest(".banner-container").style.display = "none";
+    });
+} else {
+  let banner = document.querySelector(".banner-container");
+  banner.style.display = "none";
+}

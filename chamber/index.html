@@ -13,9 +13,25 @@
     <link rel="Stylesheet" href="../chamber/styles/base.css" />
     <link rel="stylesheet" href="../chamber/styles/medium.css" />
     <link rel="stylesheet" href="../chamber/styles/large.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
+    <div class="banner-container">
+      <div class="banner-content">
+        <div class="banner-text">
+          <strong
+            >🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00
+            p.m.</strong
+          >
+        </div>
+        <button class="banner-close" type="button">
+          <span class="material-icons">close</span>
+      </div>
+    </div>
     <header>
       <div class="headname">
         <a href="../chamber/index.html"
@@ -52,17 +68,68 @@
       </div>
     </header>
     <main>
-      <div class="hero">Hero with site name call to action</div>
-      <div class="event">Event</div>
-      <div class="weather">Weather</div>
-      <div class="news">News Release</div>
-      <div class="join">Join</div>
+      <div class="hero">
+        <img
+          class="banner"
+          src="../chamber/images/HeroImage.jpg"
+          alt="The King and Queen Buildings"
+        />
+        <button class="call-to-action">Join Us!</button>
+      </div>
+
+      <div class="event">
+        <b>Ribbon Cutting.</b><br />
+        Join us for a Ribbon Cutting Ceremony at the new location of the Sandy
+        Springs Chess Club.
+      </div>
+      <div class="weather">
+        <h3>Sandy Springs Weather</h3>
+        <h3 id="temperature">°F</h3>
+        <h4 id="description-temperature">Description</h4>
+        <hr />
+        <p id="wind-speed">Wind Speed</p>
+      </div>
+      <div class="news">
+        <span id="news-date"><b>News Release</b></span>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
+          consequuntur tempore itaque, possimus atque a molestiae adipisci quas
+          odit iure quam nihil optio fugiat quo et laborum, excepturi accusamus
+          veritatis?
+        </p>
+      </div>
+
+      <div class="joinbutton">
+        <button class="join-us">Join Us!</button>
+        <p class="text-join">
+          Discover how to join the Sandy Springs City Chamber of Commerce and
+          how it will benefit your business.
+        </p>
+      </div>
+
       <aside class="aside">
-        <div>Spotlight 1</div>
-        <div>Spotlight 2</div>
-        <div class="spotlight3">Spotlight 3</div>
+        <div>
+          <b>MARTA and You!</b><br /><br />
+          Find out what we are doing to improve the MARTA system in Sandy
+          Springs. We are excited to announce that we are working with MARTA to
+          expand the Sandy Springs Station to include a new parking deck.
+        </div>
+
+        <div>
+          <b>Code Sandy Springs</b><br />
+          This is an abstract coding overview meant to help people get started
+          programming without prior experience. Be aware that all pieces of
+          information within are programming concepts, not actual code.
+        </div>
+
+        <div class="spotlight3">
+          <b>Plant a Tree!</b>
+          The Parks and Recreation Department is looking to hold a charity event
+          where you can help plant trees in the city.
+        </div>
       </aside>
     </main>
+
     <footer>
       <div class="logo-footer">
         <img
