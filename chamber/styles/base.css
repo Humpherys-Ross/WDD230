@@ -325,10 +325,26 @@ span {
   margin: 0 auto;
 }
 
-#temperature {
+#temp {
   text-align: right;
   font-size: 36px;
   right: 15px;
+}
+
+.weather-div {
+  display: inline;
+}
+
+.weather p {
+  position: relative;
+  padding-left: 0;
+  margin-left: 0;
+  padding-bottom: 0.5px;
+}
+
+.weather-div picture img {
+  width: 90px;
+  position: absolute;
 }
 
 .contact a {

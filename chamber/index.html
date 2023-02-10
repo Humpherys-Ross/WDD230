@@ -31,6 +31,7 @@
         </div>
         <button class="banner-close" type="button">
           <span class="material-icons">close</span>
+        </button>
       </div>
     </div>
     <header>
@@ -71,11 +72,23 @@
     <main>
       <div class="hero">
         <picture class="sizeable">
-          <source media="(max-width: 600px)" srcset="../chamber/images/wdd230-org-small.webp">
-          <source media="(max-width: 768px)" srcset="../chamber/images/wdd230-org-medium.webp">
-          <source media="(max-width: 1024px)" srcset="../chamber/images/wdd230-org-large.webp">
-          <img src="../chamber/images/wdd230-org-large.webp" alt="A group of people meeting">
-      </picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="../chamber/images/wdd230-org-small.webp"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="../chamber/images/wdd230-org-medium.webp"
+          />
+          <source
+            media="(max-width: 1024px)"
+            srcset="../chamber/images/wdd230-org-large.webp"
+          />
+          <img
+            src="../chamber/images/wdd230-org-large.webp"
+            alt="A group of people meeting"
+          />
+        </picture>
         <button class="call-to-action">Join Us!</button>
       </div>
 
@@ -86,10 +99,25 @@
       </div>
       <div class="weather">
         <h3>Sandy Springs Weather</h3>
-        <h3 id="temperature">°F</h3>
-        <h4 id="description-temperature">Description</h4>
+        <div class="weather-div">
+          <picture>
+            <img
+              src="../chamber/images/cloud_day_forecast.webp"
+              alt="Weather-icon"
+            />
+          </picture>
+          <h3 id="temp">
+            <span id="temperature">45</span>
+            °F
+          </h3>
+        </div>
+        <h4 id="desc-temp">Partly Cloudy</h4>
         <hr />
-        <p id="wind-speed">Wind Speed</p>
+        <p>
+          Wind Speed: <span id="speed">10</span>
+          mph
+        </p>
+        <p>Wind Chill: <span id="windchill"></span></p>
       </div>
       <div class="news">
         <span id="news-date"><b>News Release</b></span>
@@ -165,5 +193,6 @@
       </div>
     </footer>
     <script src="../chamber/scripts/scripts.js"></script>
+    <script src="../chamber/scripts/windchill.js"></script>
   </body>
 </html>
