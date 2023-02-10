@@ -334,3 +334,13 @@ span {
 .contact a {
   font-size: 20px;
 }
+
+main picture.sizeable img {
+  width: 100%;
+}
+
+picture.sizeable {
+  display: block;
+  width: 96%;
+  margin: 0 2%;
+}

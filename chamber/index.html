@@ -70,11 +70,12 @@
     </header>
     <main>
       <div class="hero">
-        <img
-          class="banner"
-          src="../chamber/images/HeroImage.jpg"
-          alt="The King and Queen Buildings"
-        />
+        <picture class="sizeable">
+          <source media="(max-width: 600px)" srcset="../chamber/images/wdd230-org-small.webp">
+          <source media="(max-width: 768px)" srcset="../chamber/images/wdd230-org-medium.webp">
+          <source media="(max-width: 1024px)" srcset="../chamber/images/wdd230-org-large.webp">
+          <img src="../chamber/images/wdd230-org-large.webp" alt="A group of people meeting">
+      </picture>
         <button class="call-to-action">Join Us!</button>
       </div>
 
