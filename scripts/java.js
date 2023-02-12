@@ -44,7 +44,7 @@ const assignments = [
   {
     week: "Week 06",
     title: "Responsive Design and Windchill Calculator",
-    link: "/chamber/index.html",
+    link: "chamber/index.html",
   },
   // Add more objects for additional assignments
 ];
