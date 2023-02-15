@@ -56,6 +56,11 @@ const assignments = [
     title: "Lazy Loading Images",
     link: "lesson7/index.html",
   },
+  {
+    week: "Week 07",
+    title: "Chamber of Commerce Discover Page",
+    link: "chamber/discover.html",
+  },
   // Add more objects for additional assignments
 ];
 
