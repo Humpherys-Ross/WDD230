@@ -13,12 +13,12 @@ const list = document.querySelector("ul");
 const assignments = [
   {
     week: "Week 01",
-    title: "Lesson 01",
+    title: "Lesson 1: Introduction to Web Development",
     link: "https://codepen.io/Humpherys-Ross/pen/LYBRMbz",
   },
   {
     week: "Week 02",
-    title: "Lesson 02",
+    title: "Design Principles",
     link: "lesson2/design-principles.html",
   },
   {
@@ -45,6 +45,16 @@ const assignments = [
     week: "Week 06",
     title: "Responsive Design and Windchill Calculator",
     link: "chamber/index.html",
+  },
+  {
+    week: "Week 07",
+    title: "CSS Property: Transform",
+    link: "week7presentation/index.html",
+  },
+  {
+    week: "Week 07",
+    title: "Lazy Loading Images",
+    link: "lesson7/index.html",
   },
   // Add more objects for additional assignments
 ];
