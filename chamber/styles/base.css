@@ -257,6 +257,12 @@ main div {
   padding: 10px;
 }
 
+#event--discover {
+  background-color: var(--accent2-color);
+  grid-column: 1/4;
+  grid-row: 1/4;
+}
+
 .join {
   display: none;
 }
