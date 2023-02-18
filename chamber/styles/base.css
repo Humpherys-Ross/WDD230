@@ -368,8 +368,6 @@ picture.sizeable {
 }
 
 .discover--images {
-  /* background-image: linear-gradient(45deg, rgb(36, 17, 141), rgb(30, 177, 25)); */
-  /* background-attachment: fixed; */
   font-family: sans-serif;
   display: grid;
   grid-template-columns: 1fr;
