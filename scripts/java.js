@@ -61,6 +61,11 @@ const assignments = [
     title: "Chamber of Commerce Discover Page",
     link: "chamber/discover.html",
   },
+  {
+    week: "Week 08",
+    title: "Week 8 Table Build",
+    link: "lesson8/tablebuild.html",
+  },
   // Add more objects for additional assignments
 ];
 
