@@ -69,7 +69,7 @@
         <p id="datetime"></p>
       </div>
     </header>
-    <main>
+    <main id="join-form">
       <h2>Chamber of Commerce Application Form</h2>
       <form method="get" action="../chamber/thankyou.html">
         <fieldset>
@@ -86,10 +86,86 @@
             that your organization can better serve the community.
           </p>
           <label class="sub"
-            ><input type="radio" name="membership" value="business" />BRONZE |
+            ><input type="radio" name="membership" value="bronze" />BRONZE |
             $100</label
           >
+          <p>
+            This is for small businesses looking to get started and established
+            in our city. This tier will allow you to get your name out there and
+            to begin building your business.
+          </p>
+          <label class="sub"
+            ><input type="radio" name="membership" value="silver" />SILVER |
+            $400</label
+          >
+          <p>
+            This is for established businesses that are looking for more
+            exposure in the community. With this tier, you get the benefits of
+            Bronze in addition to additional marketing tools to help you grow
+            and have a bigger impact on our city. This tier also includes
+            discounts on various events at city venues.
+          </p>
+          <label class="sub"
+            ><input type="radio" name="membership" value="gold" />GOLD |
+            $1000</label
+          >
+          <p>
+            This is for businesses that wish to be at the forefront of the
+            community. This not only comes with the benefits of all previous
+            tiers, but you also will have priority marketing opportunities. In
+            addition to discounted city venues, you will also have access to
+            discounted advertising opportunities.
+          </p>
         </fieldset>
+        <fieldset>
+          <legend>Enter Contact Information</legend>
+          <p><i>Fields with red border are required</i></p>
+          <label class="field">
+            First Name: <input type="text" name="fname" required />
+          </label>
+          <label class="field">
+            Last Name: <input type="text" name="lname" required />
+          </label>
+          <label class="field">
+            Business Title:
+            <input
+              type="text"
+              name="position"
+              pattern="^[a-zA-Z0-9\- ]+$"
+              id="businesstitle"
+            />
+          </label>
+          <label class="field">
+            E-mail:
+            <input
+              type="email"
+              name="email"
+              placeholder="example@mail.com"
+              required
+            />
+          </label>
+          <label class="field">
+            Cellphone #: <input type="tel" name="phone" required />
+          </label>
+          <label class="field">
+            Business Name: <input type="text" name="businessName" required />
+          </label>
+          <label class="field">
+            Business Description:
+            <textarea placeholder="Type Here" name="description"></textarea>
+          </label>
+        </fieldset>
+        <label for="dateTime" hidden>
+          Datetime
+          <input
+            type="datetime-local"
+            name="dateTime"
+            id="dateTime"
+            required
+            hidden
+          />
+        </label>
+        <input type="submit" value="Join the Chamber" id="submit" />
       </form>
     </main>
     <footer>
@@ -125,6 +201,6 @@
       </div>
     </footer>
     <script src="../chamber/scripts/scripts.js"></script>
-    <script src="../chamber/scripts/windchill.js"></script>
+    <script src="../chamber/scripts/thanksdate.js"></script>
   </body>
 </html>
