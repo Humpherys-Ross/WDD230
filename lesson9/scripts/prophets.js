@@ -19,16 +19,41 @@ const displayProphets = (prophets) => {
     let deathdate = document.createElement("p");
     let hrline = document.createElement("hr");
     let portrait = document.createElement("img");
+    let order = document.createElement("p");
+    let age = document.createElement("p");
+    // let caption = document.createElement("caption");
+
+    if (prophet.order == 1) {
+      order.textContent = `${prophet.order}st`;
+    } else if (prophet.order == 2) {
+      order.textContent = `${prophet.order}nd`;
+    } else if (prophet.order == 3) {
+      order.textContent = `${prophet.order}rd`;
+    } else {
+      order.textContent = `${prophet.order}th`;
+    }
 
     h2.textContent = `${prophet.name} ${prophet.lastname}`;
     birthdate.textContent = `Date of Birth: ${prophet.birthdate}`;
     birthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
     deathdate.textContent = `Date of Death: ${prophet.death}`;
 
+    const birthYear = new Date(prophet.birthdate).getFullYear();
+    const deathYear = new Date(prophet.death).getFullYear();
+    const currentYear = new Date().getFullYear();
+    const ageValue = deathYear
+      ? deathYear - birthYear
+      : currentYear - birthYear;
+    if (prophet.death) {
+      age.textContent = `Age at Death: ${ageValue}`;
+    } else {
+      age.textContent = `Current Age: ${ageValue}`;
+    }
+
     portrait.setAttribute("src", prophet.imageurl);
     portrait.setAttribute(
       "alt",
-      `Portrait of ${prophet.name} ${prophet.lastname}`
+      `Portrait of ${prophet.name} ${prophet.lastname} - ${order.textContent} President of the Church of Jesus Christ of Latter-day Saints`
     );
     portrait.setAttribute("loading", "lazy");
     portrait.setAttribute("width", "340");
@@ -38,8 +63,12 @@ const displayProphets = (prophets) => {
     card.appendChild(birthdate);
     card.appendChild(birthplace);
     card.appendChild(deathdate);
+    card.appendChild(age);
     card.appendChild(hrline);
     card.appendChild(portrait);
+
+    // caption.appendChild(age);
+    // card.appendChild(caption);
 
     cards.appendChild(card);
   });
