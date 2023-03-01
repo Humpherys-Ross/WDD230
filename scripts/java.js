@@ -71,6 +71,11 @@ const assignments = [
     title: "Chamber of Commerce Join Page",
     link: "chamber/join.html",
   },
+  {
+    week: "Week 09",
+    title: "Prophets JSON and FetchAPI",
+    link: "lesson9/prophets.html",
+  },
   // Add more objects for additional assignments
 ];
 
