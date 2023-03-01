@@ -101,7 +101,10 @@
     right: 15px;
     bottom: 25px;
   }
-}
-main.grid-view {
-  grid-template-columns: 1fr 1fr;
+  .views {
+    grid-column: 1/5;
+  }
+  .grid-view {
+    grid-template-columns: 1fr 1fr;
+  }
 }

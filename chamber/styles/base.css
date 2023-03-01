@@ -470,41 +470,43 @@ textarea {
 }
 
 .directoryPage h2.dirHeading {
-  font-family: "Montserrat";
   text-align: center;
   padding: 1.5rem;
-  background-color: #eeee;
-  margin-bottom: 3rem;
+  background-color: var(--accent2-color);
+  grid-column: 1/5;
 }
-.list-view section h2,
-.grid-view section h2 {
-  font-family: "Noto Serif";
-  text-align: center;
+
+.links {
+  grid-column: 1/5;
+  align-content: center;
 }
-/* --------Directory Page buttons---------- */
-/* .links ul {
+
+.links ul {
   display: flex;
   justify-content: center;
   list-style: none;
 }
+
 .links ul li span {
   margin: 7px;
   font-size: 2rem;
 }
+
 .links ul li:hover,
 .links ul li.active {
   color: white;
   background-color: #14213d;
   border-radius: 5px;
   cursor: pointer;
-} */
-/*--------Grid View-------------*/
-/* .grid-view section {
+}
+
+.grid-view section {
   margin: 1rem;
   padding: 2.5rem 1.5rem;
   border-radius: 1rem;
   border: #888 1px solid;
-  color: #14213d;
+  color: var(--paragraph-color-on-white);
+  text-align: center;
 }
 .grid-view section img {
   display: block;
@@ -520,21 +522,21 @@ textarea {
   font-size: 13px;
   font-weight: bolder;
   padding: 5px 0;
-} */
-/*-----------List View------------*/
-/* .list-view section {
+}
+
+.list-view section {
   padding: 1rem;
-  color: #14213d;
+  color: var(--paragraph-color-on-white);
   margin: 0 0.5rem;
   font-weight: bold;
   font-size: 13px;
 }
 .list-view section:nth-last-of-type(even) {
-  background-color: rgba(252, 163, 17, 0.5);
+  background-color: var(--accent2-color);
 }
 .list-view section p {
   padding: 3px;
 }
 .list-view section:last-child {
   margin-bottom: 3rem;
-} */
+}

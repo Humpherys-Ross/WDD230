@@ -33,6 +33,8 @@ function displayBusinessesInGrid(business) {
   image.setAttribute("src", business.images);
   image.setAttribute("alt", `Image of ${business.name}`);
   image.setAttribute("loading", "lazy");
+  //   image.setAttribute("width", "125");
+  //   image.setAttribute("height", "100");
 
   media_card.appendChild(h2);
   media_card.appendChild(image);
