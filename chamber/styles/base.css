@@ -481,8 +481,8 @@ textarea {
   font-family: "Noto Serif";
   text-align: center;
 }
-/*--------Directory Page buttons----------*/
-.links ul {
+/* --------Directory Page buttons---------- */
+/* .links ul {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -497,9 +497,9 @@ textarea {
   background-color: #14213d;
   border-radius: 5px;
   cursor: pointer;
-}
+} */
 /*--------Grid View-------------*/
-.grid-view section {
+/* .grid-view section {
   margin: 1rem;
   padding: 2.5rem 1.5rem;
   border-radius: 1rem;
@@ -520,9 +520,9 @@ textarea {
   font-size: 13px;
   font-weight: bolder;
   padding: 5px 0;
-}
+} */
 /*-----------List View------------*/
-.list-view section {
+/* .list-view section {
   padding: 1rem;
   color: #14213d;
   margin: 0 0.5rem;
@@ -537,4 +537,4 @@ textarea {
 }
 .list-view section:last-child {
   margin-bottom: 3rem;
-}
+} */

@@ -86,7 +86,7 @@
   }
 }
 
-.grid-view {
+main.grid-view {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .list-view section {

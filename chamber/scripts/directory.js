@@ -2,22 +2,32 @@ const dataURL =
   "https://humpherys-ross.github.io/wdd230/chamber/scripts/data.json";
 const listDiv = document.querySelector(".list-view");
 const cardDiv = document.querySelector(".grid-view");
-const viewsButtons = document.querySelectorAll(".links ul li");
-const views = document.querySelectorAll(".view-div");
 
-const displayBusinesses = (business, format) => {
-  const media_card = document.createElement("section");
-  const h2 = document.createElement("h2");
-  const image = document.createElement("img");
-  const hr = document.createElement("hr");
-  const phone = document.createElement("p");
-  const address = document.createElement("p");
-  const website = document.createElement("a");
+fetch(dataURL)
+  .then((response) => {
+    return response.json();
+  })
+  .then((jsonObject) => {
+    console.table(jsonObject);
 
-  h2.textContent = business.name;
-  phone.textContent = business.phone;
-  address.textContent = business.address;
-  website.textContent = business.website;
+    const businesses = jsonObject["businesses"];
+    businesses.forEach(displayBusinessesInGrid);
+    businesses.forEach(displayBusinessesInList);
+  });
+
+function displayBusinessesInGrid(business) {
+  let media_card = document.createElement("section");
+  let h2 = document.createElement("h2");
+  let image = document.createElement("img");
+  let hr = document.createElement("hr");
+  let phone = document.createElement("p");
+  let address = document.createElement("p");
+  let website = document.createElement("a");
+
+  h2.textContent = `${business.name}`;
+  phone.textContent = `${business.phone}`;
+  address.textContent = `${business.address}`;
+  website.textContent = `${business.website}`;
 
   website.setAttribute("href", business.website);
   image.setAttribute("src", business.images);
@@ -31,29 +41,32 @@ const displayBusinesses = (business, format) => {
   media_card.appendChild(address);
   media_card.appendChild(website);
 
-  if (format === "list") {
-    media_card.classList.add("list-view");
-    website.classList.add("hide");
-    cardDiv.classList.add("hide");
-    listDiv.appendChild(media_card);
-  } else if (format === "grid") {
-    media_card.classList.add("grid-view");
-    listDiv.classList.add("hide");
-    cardDiv.appendChild(media_card);
-  }
-};
+  cardDiv.appendChild(media_card);
+}
 
-fetch(dataURL)
-  .then((response) => response.json())
-  .then((jsonObject) => {
-    console.table(jsonObject);
+function displayBusinessesInList(business) {
+  let media_card = document.createElement("section");
+  let h2 = document.createElement("h2");
+  let phone = document.createElement("p");
+  let address = document.createElement("p");
+  let website = document.createElement("p");
 
-    const businesses = jsonObject.businesses;
-    businesses.forEach((business) => {
-      displayBusinesses(business, "grid");
-      displayBusinesses(business, "list");
-    });
-  });
+  h2.textContent = business.name;
+  phone.textContent = business.phone;
+  address.textContent = business.address;
+  website.textContent = business.website;
+
+  media_card.appendChild(h2);
+  media_card.appendChild(phone);
+  media_card.appendChild(address);
+  media_card.appendChild(website);
+
+  listDiv.appendChild(media_card);
+}
+
+// Script for Grid and List Views
+let viewsButtons = document.querySelectorAll(".links ul li");
+let views = document.querySelectorAll(".view-div");
 
 viewsButtons.forEach((link) => {
   link.addEventListener("click", () => {
@@ -62,16 +75,16 @@ viewsButtons.forEach((link) => {
     });
     link.classList.add("active");
 
-    const li_view = link.getAttribute("data-view");
+    let li_view = link.getAttribute("data-view");
 
     views.forEach((view) => {
       view.style.display = "none";
     });
 
-    if (li_view === "grid-view") {
-      document.querySelector(`.${li_view}`).style.display = "grid";
+    if (li_view == "grid-view") {
+      document.querySelector("." + li_view).style.display = "grid";
     } else {
-      document.querySelector(`.${li_view}`).style.display = "block";
+      document.querySelector("." + li_view).style.display = "block";
     }
   });
 });
