@@ -76,6 +76,11 @@ const assignments = [
     title: "Prophets JSON and FetchAPI",
     link: "lesson9/prophets.html",
   },
+  {
+    week: "Week 09",
+    title: "Chamber of Commerce Directory Page",
+    link: "chamber/directory.html",
+  },
   // Add more objects for additional assignments
 ];
 

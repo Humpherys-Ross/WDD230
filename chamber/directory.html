@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ross Humpherys Chamber Project WDD230</title>
+    <meta
+      name="description"
+      content="Chamber Project for WDD230 Web Frontend Development 1 by Ross Humpherys."
+    />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="Stylesheet" href="../chamber/styles/base.css" />
+    <link rel="stylesheet" href="../chamber/styles/medium.css" />
+    <link rel="stylesheet" href="../chamber/styles/large.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../favicon.ico" />
+  </head>
+
+  <body>
+    <div class="banner-container">
+      <div class="banner-content">
+        <div class="banner-text">
+          <strong
+            >🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00
+            p.m.</strong
+          >
+        </div>
+        <button class="banner-close" type="button">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+    </div>
+    <header>
+      <div class="headname">
+        <a href="../chamber/index.html"
+          ><img
+            class="logo"
+            src="../chamber/images/SandySprings.webp"
+            alt="Sandy Springs City Chamber of Commerce"
+        /></a>
+        <h1 class="header-title">Sandy Springs City</h1>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img src="../chamber/images/facebook.png" alt="facebook"
+        /></a>
+        <a href="https://mobile.twitter.com/" target="_blank"
+          ><img src="images/twitter.png" alt="twitter"
+        /></a>
+      </div>
+      <div>
+        <button id="menu-button"><span>&#9776;</span><span>X</span></button>
+      </div>
+      <div class="menu">
+        <nav>
+          <ul id="main-nav">
+            <li><a href="../chamber/discover.html">Discover</a></li>
+            <li class="active">
+              <a href="../chamber/directory.html">Directory</a>
+            </li>
+            <li><a href="../chamber/join.html">Join</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="date-header">
+        <p id="datetime"></p>
+      </div>
+    </header>
+    <main class="directoryPage">
+      <h2 class="dirHeading">Directory</h2>
+      <div class="links">
+        <ul>
+          <li class="grid active" data-view="grid-view">
+            <span class="material-icons-outlined"> grid_view</span>
+          </li>
+
+          <li class="list" data-view="list-view">
+            <span class="material-icons-outlined"> format_list_bulleted</span>
+          </li>
+        </ul>
+      </div>
+      <div class="views">
+        <div class="view-div grid-view" style="display: grid"></div>
+        <div class="view-div list-view" style="display: none"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="logo-footer">
+        <img
+          class="logo-footer"
+          src="../chamber/images/SandySprings.webp"
+          alt="Sandy Springs Logo"
+        />
+      </div>
+      <div class="title-footer">
+        <h2>Sandy Springs City Chamber of Commerce</h2>
+      </div>
+      <div class="contact">
+        <p>1234 Main Street</p>
+        <p>Sandy Springs, GA 30328</p>
+        <p>Phone: 404-555-5555</p>
+        <p>Email: Pancakes@byui.edu</p>
+        <a
+          href="https://www.google.com/maps/place/Sandy+Springs,+GA/@33.9434806,-84.4228559,12z/data=!3m1!4b1!4m5!3m4!1s0x88f50c1dc0a2c231:0xa9e9faf26702de1d!8m2!3d33.9304354!4d-84.3733263"
+          >📍 Location</a
+        >
+        <br />
+        <br />
+      </div>
+      <div class="info">
+        <span
+          >&nbsp; &nbsp; &copy;<span id="copyrightyear"></span> &nbsp; Sandy
+          Springs City Chamber of Commerce &nbsp;</span
+        >
+        | &nbsp; Ross Humpherys &nbsp; | &nbsp; WDD 230 Chamber &nbsp;| &nbsp;
+        Last modification: &nbsp; &nbsp; <span id="lastmod"></span>
+      </div>
+    </footer>
+    <script src="../chamber/scripts/scripts.js"></script>
+    <script src="../chamber/scripts/directory.js"></script>
+  </body>
+</html>

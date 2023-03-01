@@ -1,0 +1,88 @@
+{
+    "businesses" : [
+        {
+            "name": "KELLER WILLIAMS REALTY NW MONTANA",
+            "address": "1830 3rd Ave East Suite 102, Kalispell MT 59901",
+            "phone": "406-471-0524",
+            "website": "https://landscapesrealty.com/",
+            "images": "#"
+        },
+        {
+            "name": "PNPA | TRADEWERKS INC",
+            "address": "120 1st Ave. West, Kalispell MT 59901",
+            "phone": "406-253-5328",
+            "website": "https://tradewerks.com/",
+            "images": "#"
+        },
+        {
+            "name": "RIDDLE'S JEWELRY",
+            "address": "2244 US 93 North Ste 102 , Kalispell MT 59901",
+            "phone": "406-755-8400",
+            "website": "https://www.riddlesjewelry.com/",
+            "images": "#"
+        },
+        {
+            "name": "MY GLACIER VILLAGE",
+            "address": "1103 S Main St Kalispell, MT 59901",
+            "phone": "406-250-8784",
+            "website": "https://www.myglaciervillage.com/",
+            "images": "#"
+        },
+        {
+            "name": "NAVIGATE MARKETING, INC.",
+            "address": "1203 U.S. Hwy 2 W #1 Kalispell, MT 59901",
+            "phone": "406-471-4045",
+            "website": "https://www.navmarkads.com/",
+            "images": "#"
+        },
+        {
+            "name": "JENNIFER SHELLEY",
+            "address": "420 Electric Ave Bigfork, MT 59911",
+            "phone": "406-249-8929",
+            "website": "https://jennifershelley.purewestrealestate.com/",
+            "images": "#"
+        },
+        {
+            "name": "H&R BLOCK- MISSOULA",
+            "address": "275 Corporate Dr Ste 300, Kalispell, MT 59901",
+            "phone": "406-752-8747",
+            "website": "https://www.hrblock.com/",
+            "images": "#"
+        },
+        {
+            "name": "FLATHEAD BEACON",
+            "address": "17 S Main St Kalispell, MT 59901",
+            "phone": "406-257-9220",
+            "website": "https://flatheadbeacon.com/",
+            "images": "#"
+        },
+        {
+            "name": "EXPRESS EMPLOYMENT PROFESSIONALS",
+            "address": "4 Sunset Plaza, Suite 101, Kalispell, Montana 59901",
+            "phone": "406-257-2255",
+            "website": "https://www.expresspros.com/kalispellmt/",
+            "images": "#"
+        },
+        {
+            "name": "CODESK LLC",
+            "address": "201 3rd Ave W Kalispell, MT 59901",
+            "phone": "406-602-3375",
+            "website": "http://www.yourcodesk.com/",
+            "images": "#"
+        },
+        {
+            "name": "INSTY-PRINTS",
+            "address": "131 N Main St Kalispell, MT 59901",
+            "phone": "406-752-8812",
+            "website": "https://www.instyprints.com/locations/kalispell-mt",
+            "images": "#"
+        },
+        {
+            "name": "SUPER 1 FOODS - CITY CENTER",
+            "address": "55 1st Ave E N Kalispell, MT 59901",
+            "phone": "406-755-3144",
+            "website": "https://www.super1foods.net/",
+            "images": "#"
+        }
+    ]
+}
