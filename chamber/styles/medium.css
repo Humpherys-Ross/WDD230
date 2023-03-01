@@ -102,3 +102,6 @@
     bottom: 25px;
   }
 }
+.grid-view {
+  grid-template-columns: 1fr 1fr;
+}
