@@ -1,6 +1,21 @@
 const url =
   "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
 
+const filterButton = document.querySelector("#filter-button");
+
+filterButton.addEventListener("click", () => {
+  const prophets = document.querySelectorAll("section");
+
+  prophets.forEach((cards) => {
+    const length = cards.querySelector("p:nth-child(5)").textContent;
+    if (length.includes("More that 10")) {
+      cards.style.display = "none";
+    } else {
+      cards.style.display = "block";
+    }
+  });
+});
+
 async function getProphetData() {
   const response = await fetch(url);
   const data = await response.json();
@@ -21,6 +36,7 @@ const displayProphets = (prophets) => {
     let portrait = document.createElement("img");
     let order = document.createElement("p");
     let age = document.createElement("p");
+    let length = document.createElement("p");
     // let caption = document.createElement("caption");
 
     if (prophet.order == 1) {
@@ -37,6 +53,7 @@ const displayProphets = (prophets) => {
     birthdate.textContent = `Date of Birth: ${prophet.birthdate}`;
     birthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
     deathdate.textContent = `Date of Death: ${prophet.death}`;
+    length.textContent = `Length of Service: ${prophet.length}`;
 
     const birthYear = new Date(prophet.birthdate).getFullYear();
     const deathYear = new Date(prophet.death).getFullYear();
@@ -64,6 +81,7 @@ const displayProphets = (prophets) => {
     card.appendChild(birthplace);
     card.appendChild(deathdate);
     card.appendChild(age);
+    card.appendChild(length);
     card.appendChild(hrline);
     card.appendChild(portrait);
 
