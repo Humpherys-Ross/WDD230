@@ -519,9 +519,14 @@ textarea {
 }
 .grid-view section p,
 .grid-view section a {
-  font-size: 13px;
+  font-size: 1rem;
   font-weight: bolder;
   padding: 5px 0;
+}
+
+.grid-view section a {
+  color: blue;
+  text-decoration: underline;
 }
 
 .list-view section {
@@ -536,7 +541,15 @@ textarea {
 }
 .list-view section p {
   padding: 3px;
+  font-size: 1rem;
 }
+
+.list-view section a {
+  color: blue;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
 .list-view section:last-child {
   margin-bottom: 3rem;
 }

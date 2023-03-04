@@ -71,18 +71,18 @@
             "images": "../chamber/images/Feldman_PNG.png"
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "website": "",
-            "images": "#"
+            "name": "Twinkle Toes Nanny Agency Northeast Atlanta",
+            "address": "5075 Peachtree Parkway Ste 107, Peachtree Corners, GA 30092",
+            "phone": "(770) 733-7382",
+            "website": "https://twinkletoesnanny.com/northeast-atlanta",
+            "images": "../chamber/images/logo-twinkletoes.png"
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "website": "",
-            "images": "#"
+            "name": "Datascape, Inc.",
+            "address": "7840 Roswell Rd, Suite 322, Sandy Springs, GA 30350",
+            "phone": "(770) 518-8480",
+            "website": "http://www.datascape.com/",
+            "images": "../chamber/images/DS_Horz-whitetext-1.png"
         }
     ]
 }

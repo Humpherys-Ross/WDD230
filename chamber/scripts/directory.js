@@ -51,7 +51,7 @@ function displayBusinessesInList(business) {
   let h2 = document.createElement("h2");
   let phone = document.createElement("p");
   let address = document.createElement("p");
-  let website = document.createElement("p");
+  let website = document.createElement("a");
 
   h2.textContent = business.name;
   phone.textContent = business.phone;
