@@ -81,6 +81,11 @@ const assignments = [
     title: "Chamber of Commerce Directory Page",
     link: "chamber/directory.html",
   },
+  {
+    week: "Week 10",
+    title: "Weater API",
+    link: "lesson10/weather-api.html",
+  },
   // Add more objects for additional assignments
 ];
 
