@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#current-temp {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#weather-icon {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+figcaption {
+  font-size: 18px;
+}
