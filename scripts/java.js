@@ -86,6 +86,11 @@ const assignments = [
     title: "Weater API",
     link: "lesson10/weather-api.html",
   },
+  {
+    week: "Week 10",
+    title: "Chamber of Commerce Weather API Integration",
+    link: "chamber/index.html",
+  },
   // Add more objects for additional assignments
 ];
 

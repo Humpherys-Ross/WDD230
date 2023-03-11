@@ -24,10 +24,10 @@
     <div class="banner-container">
       <div class="banner-content">
         <div class="banner-text">
-          <strong
-            >🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00
-            p.m.</strong
-          >
+          <strong>
+            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00
+            p.m.
+          </strong>
         </div>
         <button class="banner-close" type="button">
           <span class="material-icons">close</span>
@@ -36,21 +36,22 @@
     </div>
     <header>
       <div class="headname">
-        <a href="../chamber/index.html"
-          ><img
+        <a href="../chamber/index.html">
+          <img
             class="logo"
             src="../chamber/images/SandySprings.webp"
             alt="Sandy Springs City Chamber of Commerce"
-        /></a>
+          />
+        </a>
         <h1 class="header-title">Sandy Springs City</h1>
       </div>
       <div class="social">
-        <a href="https://www.facebook.com/" target="_blank"
-          ><img src="../chamber/images/facebook.png" alt="facebook"
-        /></a>
-        <a href="https://mobile.twitter.com/" target="_blank"
-          ><img src="images/twitter.png" alt="twitter"
-        /></a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="../chamber/images/facebook.png" alt="facebook" />
+        </a>
+        <a href="https://mobile.twitter.com/" target="_blank">
+          <img src="images/twitter.png" alt="twitter" />
+        </a>
       </div>
       <div>
         <button id="menu-button"><span>&#9776;</span><span>X</span></button>
@@ -101,20 +102,17 @@
         <h3>Sandy Springs Weather</h3>
         <div class="weather-div">
           <picture>
-            <img
-              src="../chamber/images/cloud_day_forecast.webp"
-              alt="Weather-icon"
-            />
+            <img src="" alt="" id="weather-icon" />
           </picture>
           <h3 id="temp">
-            <span id="temperature">45</span>
+            <span id="temperature"></span>
             °F
           </h3>
         </div>
-        <h4 id="desc-temp">Partly Cloudy</h4>
+        <h4 id="desc-temp"></h4>
         <hr />
         <p>
-          Wind Speed: <span id="speed">10</span>
+          Wind Speed: <span id="speed"></span>
           mph
         </p>
         <p>Wind Chill: <span id="windchill"></span></p>
@@ -158,7 +156,41 @@
           where you can help plant trees in the city.
         </div>
       </aside>
-      ../chamber/directory.html
     </main>
+    <footer>
+      <div class="logo-footer">
+        <img
+          class="logo-footer"
+          src="../chamber/images/SandySprings.webp"
+          alt="Sandy Springs Logo"
+        />
+      </div>
+      <div class="title-footer">
+        <h2>Sandy Springs City Chamber of Commerce</h2>
+      </div>
+      <div class="contact">
+        <p>1234 Main Street</p>
+        <p>Sandy Springs, GA 30328</p>
+        <p>Phone: 404-555-5555</p>
+        <p>Email: Pancakes@byui.edu</p>
+        <a
+          href="https://www.google.com/maps/place/Sandy+Springs,+GA/@33.9434806,-84.4228559,12z/data=!3m1!4b1!4m5!3m4!1s0x88f50c1dc0a2c231:0xa9e9faf26702de1d!8m2!3d33.9304354!4d-84.3733263"
+          >📍 Location</a
+        >
+        <br />
+        <br />
+      </div>
+      <div class="info">
+        <span
+          >&nbsp; &nbsp; &copy;<span id="copyrightyear"></span> &nbsp; Sandy
+          Springs City Chamber of Commerce &nbsp;</span
+        >
+        | &nbsp; Ross Humpherys &nbsp; | &nbsp; WDD 230 Chamber &nbsp;| &nbsp;
+        Last modification: &nbsp; &nbsp; <span id="lastmod"></span>
+      </div>
+    </footer>
+    <script src="../chamber/scripts/scripts.js"></script>
+    <script src="../chamber/scripts/weatherapi.js"></script>
+    <script src="../chamber/scripts/windchill.js"></script>
   </body>
 </html>
