@@ -8,7 +8,7 @@ fetch(dataURL)
     return response.json();
   })
   .then((jsonObject) => {
-    console.table(jsonObject);
+    //console.table(jsonObject);
 
     const businesses = jsonObject["businesses"];
     businesses.forEach(displayBusinessesInGrid);
