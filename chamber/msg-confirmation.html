@@ -9,10 +9,6 @@
       name="description"
       content="Chamber Project for WDD230 Web Frontend Development 1 by Ross Humpherys."
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-    />
     <link rel="stylesheet" href="../styles/normalize.css" />
     <link rel="Stylesheet" href="../chamber/styles/base.css" />
     <link rel="stylesheet" href="../chamber/styles/medium.css" />
@@ -28,10 +24,10 @@
     <div class="banner-container">
       <div class="banner-content">
         <div class="banner-text">
-          <strong
-            >🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00
-            p.m.</strong
-          >
+          <strong>
+            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00
+            p.m.
+          </strong>
         </div>
         <button class="banner-close" type="button">
           <span class="material-icons">close</span>
@@ -40,21 +36,22 @@
     </div>
     <header>
       <div class="headname">
-        <a href="../chamber/index.html"
-          ><img
+        <a href="../chamber/index.html">
+          <img
             class="logo"
             src="../chamber/images/SandySprings.webp"
             alt="Sandy Springs City Chamber of Commerce"
-        /></a>
+          />
+        </a>
         <h1 class="header-title">Sandy Springs City</h1>
       </div>
       <div class="social">
-        <a href="https://www.facebook.com/" target="_blank"
-          ><img src="../chamber/images/facebook.png" alt="facebook"
-        /></a>
-        <a href="https://mobile.twitter.com/" target="_blank"
-          ><img src="images/twitter.png" alt="twitter"
-        /></a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="../chamber/images/facebook.png" alt="facebook" />
+        </a>
+        <a href="https://mobile.twitter.com/" target="_blank">
+          <img src="images/twitter.png" alt="twitter" />
+        </a>
       </div>
       <div>
         <button id="menu-button"><span>&#9776;</span><span>X</span></button>
@@ -63,9 +60,7 @@
         <nav>
           <ul id="main-nav">
             <li><a href="../chamber/discover.html">Discover</a></li>
-            <li class="active">
-              <a href="../chamber/directory.html">Directory</a>
-            </li>
+            <li><a href="../chamber/directory.html">Directory</a></li>
             <li><a href="../chamber/join.html">Join</a></li>
             <li><a href="../chamber/contact.html">Contact</a></li>
           </ul>
@@ -75,25 +70,13 @@
         <p id="datetime"></p>
       </div>
     </header>
-    <main class="directoryPage">
-      <h2 class="dirHeading">Directory</h2>
-      <div class="links">
-        <ul>
-          <li class="grid active" data-view="grid-view">
-            <span class="material-icons-outlined"> grid_view</span>
-          </li>
-
-          <li class="list" data-view="list-view">
-            <span class="material-icons-outlined"> format_list_bulleted</span>
-          </li>
-        </ul>
-      </div>
-      <div class="views">
-        <div class="view-div grid-view" style="display: grid"></div>
-        <div class="view-div list-view" style="display: none"></div>
-      </div>
+    <main id="thankyou">
+      <h2></h2>
+        Thanks for contacting us!
+        <img src="images/checkmark-xxl.png" alt="checkmark" width="20" />
+      </h2>
+      <p>Our speciaist will be with you shortly.</p>
     </main>
-
     <footer>
       <div class="logo-footer">
         <img
@@ -127,6 +110,5 @@
       </div>
     </footer>
     <script src="../chamber/scripts/scripts.js"></script>
-    <script src="../chamber/scripts/directory.js"></script>
   </body>
 </html>
