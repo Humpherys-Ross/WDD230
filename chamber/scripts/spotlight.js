@@ -6,7 +6,7 @@ fetch(dataURL)
     return response.json();
   })
   .then((jsonObject) => {
-    console.table(jsonObject);
+    //console.table(jsonObject);
 
     const businesses = jsonObject["businesses"];
     const goldCompanies = businesses.filter(
