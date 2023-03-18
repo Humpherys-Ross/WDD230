@@ -614,6 +614,12 @@ main#contact {
   overflow: hidden;
 }
 
+.aside div h3 {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #0a0707;
+}
+
 .aside div img {
   max-width: 100%;
   height: auto;
