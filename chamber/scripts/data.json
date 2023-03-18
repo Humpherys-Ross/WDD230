@@ -5,7 +5,8 @@
             "address": "5920 Roswell Rd a120, Sandy Springs, GA 30328",
             "phone": "(678) 560-1500",
             "website": "https://www.battleandbrew.com/",
-            "images": "../chamber/images/BB-logo.png"
+            "images": "../chamber/images/BB-logo.png",
+            "status": "gold"
         },
         {
             "name": "Allstate",
@@ -19,14 +20,16 @@
             "address": "225 Baker St NW, Atlanta, GA 30313",
             "phone": "(404) 581-4138",
             "website": "https://www.georgiaaquarium.org/",
-            "images": "../chamber/images/Georgia-Aquarium-Logo.webp"
+            "images": "../chamber/images/Georgia-Aquarium-Logo.webp",
+            "status": "gold"
         },
         {
             "name": "Mod Creations Inc",
             "address": "152 Mount Paran Road NE, Atlanta, GA 30342",
             "phone": "(310) 722-9981",
             "website": "https://www.mod-creations.com/",
-            "images": "../chamber/images/MOD_LOGO.png"
+            "images": "../chamber/images/MOD_LOGO.png",
+            "status": "silver"
         },
         {
             "name": "Focus Brands LLC",
@@ -40,14 +43,16 @@
             "address": "5825 Roswell Rd, Sandy Springs, GA 30328",
             "phone": "(404) 226-9859",
             "website": "https://www.mutationbrew.com/",
-            "images": "../chamber/images/Mutation Brewing Grey.webp"
+            "images": "../chamber/images/Mutation Brewing Grey.webp",
+            "status": "silver"
         },
         {
             "name": "Nothing Bundt Cakes",
             "address": "5975 Roswell Road - Suite A-103, Sandy Springs, GA 30328",
             "phone": "(404) 236-2114",
             "website": "https://www.nothingbundtcakes.com/",
-            "images": "../chamber/images/nothing-bundt-cakes.webp"
+            "images": "../chamber/images/nothing-bundt-cakes.webp",
+            "status": "silver"
         },
         {
             "name": "First Carolina Bank",
@@ -75,7 +80,8 @@
             "address": "5075 Peachtree Parkway Ste 107, Peachtree Corners, GA 30092",
             "phone": "(770) 733-7382",
             "website": "https://twinkletoesnanny.com/northeast-atlanta",
-            "images": "../chamber/images/logo-twinkletoes.png"
+            "images": "../chamber/images/logo-twinkletoes.png",
+            "status": "silver"
         },
         {
             "name": "Datascape, Inc.",
