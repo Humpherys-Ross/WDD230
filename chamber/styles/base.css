@@ -603,3 +603,18 @@ main#contact {
 .contactBtn:hover {
   background-color: var(--secondary-color);
 }
+
+.aside div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.aside div img {
+  max-width: 100%;
+  height: auto;
+}
