@@ -32,7 +32,6 @@ fetch(dataURL)
                            <img src="${silverCompany.images}" alt="${silverCompany.name}">
                            <p>${silverCompany.phone}</p>`;
 
-    //randomly select a second silver company that hasn't been selected already
     // Randomly select a second silver status company that has not been selected yet and insert its name, image, and phone number into the third div
     const remainingSilverCompanies = silverCompanies.filter(
       (company) => company !== silverCompany
