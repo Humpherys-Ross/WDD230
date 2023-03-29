@@ -1,0 +1,31 @@
+@media only screen and (min-width: 1020px) {
+  nav button {
+    display: none;
+  }
+
+  nav ul#primaryNav {
+    display: flex;
+  }
+
+  nav ul li {
+    align-self: center;
+    flex: 1 1 auto;
+  }
+
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(211, 211, 211, 0.3);
+    text-align: center;
+    padding: 0.8rem 2vw;
+  }
+
+  nav ul li a:hover {
+    padding: 1rem 2vw;
+  }
+
+  nav ul li.social-media-1 a,
+  nav ul li.social-media-2 a {
+    border: none;
+    padding: 0.8rem 0.5vw;
+  }
+}
