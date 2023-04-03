@@ -94,7 +94,7 @@ const assignments = [
   {
     week: "Final Project",
     title: "Final Project",
-    link: "/bountifulfoods/index.html",
+    link: "bountifulfoods/index.html",
   },
   // Add more objects for additional assignments
 ];
