@@ -96,3 +96,118 @@ nav ul.open {
   padding: 5px;
   color: #666;
 }
+
+#fruit-form {
+  margin: 50px auto;
+  width: 90%;
+  max-width: 700px;
+  background-color: var(--secondary-color);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#fruit-form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: var(--tertiary-color);
+  font-family: var(--header-font);
+}
+
+#fruit-form input,
+#fruit-form select,
+#fruit-form textarea {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: none;
+  transition: box-shadow 0.2s ease-in-out;
+  font-family: var(--body-font);
+}
+
+#fruit-form input:focus,
+#fruit-form select:focus,
+#fruit-form textarea:focus {
+  box-shadow: 0px 0px 3px 2px #a3daff;
+}
+
+#fruit-form button[type="submit"] {
+  display: block;
+  margin: 20px auto 0;
+  background-color: var(--tertiary-color);
+  border: none;
+  color: white;
+  font-family: var(--body-font);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+#fruit-form button[type="submit"]:hover {
+  background-color: var(--primary-color);
+}
+
+.fruit-select {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.fruit-select select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.fruit-select:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+.fruit-select select:focus + *:after {
+  box-shadow: 0px 0px 3px 2px #a3daff;
+}
+
+.fruit-select select:focus + *:before {
+  color: #a3daff;
+  content: "\25bc";
+  display: block;
+  position: absolute;
+  top: -15px;
+  right: 0;
+  left: 0;
+  text-align: center;
+  font-size: 20px;
+  pointer-events: none;
+}
+
+.fruit-select select option {
+  font-size: 16px;
+}
+
+#instructions {
+  height: 100px;
+}

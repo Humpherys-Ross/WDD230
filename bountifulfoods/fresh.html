@@ -56,7 +56,37 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <form id="fruit-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required /><br />
+
+        <label for="fruit1">Fruit 1:</label>
+        <select id="fruit1" name="fruit1" required></select
+        ><br />
+
+        <label for="fruit2">Fruit 2:</label>
+        <select id="fruit2" name="fruit2" required></select
+        ><br />
+
+        <label for="fruit3">Fruit 3:</label>
+        <select id="fruit3" name="fruit3" required></select
+        ><br />
+
+        <label for="instructions">Special Instructions:</label>
+        <textarea id="instructions" name="instructions"></textarea><br />
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="output"></div>
+    </main>
     <footer>
       <div class="footer-content">
         <div>
