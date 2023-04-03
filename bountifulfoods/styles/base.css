@@ -1,8 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Farsan&display=swap");
+
+:root {
+  --header-font: "Alkatra", sans-serif;
+  --body-font: "Farsan", cursive;
+  --primary-color: #c7cb85;
+  --secondary-color: #7ea172;
+  --tertiary-color: #502419;
+}
+
 * {
   margin: 0;
   padding: 0;
   /* box-sizing: border-box; */
   /* border: red 1px dashed; */
+}
+
+html {
+  background-color: var(--primary-color);
 }
 
 nav button {
@@ -14,9 +28,10 @@ nav button {
 }
 
 nav {
-  background-color: #14213d;
+  background-color: var(--tertiary-color);
   text-align: center;
   padding: 0.2rem;
+  font-family: var(--header-font);
 }
 
 #menu-btn {
@@ -57,4 +72,27 @@ nav ul.open {
   align-items: center;
   justify-content: center;
   padding-left: 2rem;
+  font-family: var(--header-font);
+}
+
+.footer-content {
+  display: block;
+  background-color: var(--tertiary-color);
+  color: white;
+  padding: 10px;
+  padding-top: 0;
+}
+.footer-content div {
+  font-size: 13px;
+  text-align: center;
+  align-self: center;
+}
+.base-footer {
+  text-align: center;
+  padding: 1.5rem 2vw;
+  margin: 2rem;
+}
+.base-footer p {
+  padding: 5px;
+  color: #666;
 }

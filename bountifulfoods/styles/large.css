@@ -28,4 +28,13 @@
     border: none;
     padding: 0.8rem 0.5vw;
   }
+
+  .base-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .base-footer p {
+    border-right: 1px solid #666;
+    border-left: 1px solid #666;
+  }
 }

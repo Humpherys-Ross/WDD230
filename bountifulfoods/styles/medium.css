@@ -1,0 +1,12 @@
+@media only screen and (min-width: 760px) {
+  .footer-content {
+    display: flex;
+  }
+  .footer-content div {
+    margin: 2rem;
+    flex: 1 1 auto;
+  }
+  .footer-content img {
+    max-width: 75%;
+  }
+}
