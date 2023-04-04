@@ -6,18 +6,40 @@ fetch(dataURL)
     return response.json();
   })
   .then((jsonObject) => {
-    console.table(jsonObject);
-    const fruits = jsonObject["fruits"];
+    //console.table(jsonObject);
+    const fruits = jsonObject;
+    //console.table(fruits);
     const form = document.querySelector("#fruit-form");
     const output = document.querySelector("#output");
 
     // Populate fruits dropdowns
     const fruitSelects = document.querySelectorAll(".fruit-select");
+    console.log(fruitSelects);
     for (let i = 0; i < fruitSelects.length; i++) {
-      const fruitOptions = fruits.map((fruit) => {
-        return `<option value="${fruit.name}" data-carbs="${fruit.carbs}" data-protein="${fruit.protein}" data-fat="${fruit.fat}" data-sugar="${fruit.sugar}" data-calories="${fruit.calories}">${fruit.name}</option>`;
-      });
-      fruitSelects[i].innerHTML += fruitOptions.join("");
+      for (let j = 0; j < fruits.length; j++) {
+        const fruitOption = document.createElement("option");
+        fruitOption.value = fruits[j].name;
+        fruitOption.setAttribute(
+          "nutritions-carbohydrates",
+          fruits[j].nutritions.carbohydrates
+        );
+        fruitOption.setAttribute(
+          "nutritions-protein",
+          fruits[j].nutritions.protein
+        );
+        fruitOption.setAttribute("nutritions-fat", fruits[j].nutritions.fat);
+        fruitOption.setAttribute(
+          "nutritions-sugar",
+          fruits[j].nutritions.sugar
+        );
+        fruitOption.setAttribute(
+          "nutritions-calories",
+          fruits[j].nutritions.calories
+        );
+        fruitOption.textContent = fruits[j].name;
+        fruitSelects[i].appendChild(fruitOption);
+      }
+      console.log(fruitSelects[i]);
     }
 
     // Handle form submission
@@ -35,19 +57,27 @@ fetch(dataURL)
         fruitsSelected.push({
           name: select.value,
           carbs: parseInt(
-            select.options[select.selectedIndex].getAttribute("data-carbs")
+            select.options[select.selectedIndex].getAttribute(
+              "nutritions-carbohydrates"
+            )
           ),
           protein: parseInt(
-            select.options[select.selectedIndex].getAttribute("data-protein")
+            select.options[select.selectedIndex].getAttribute(
+              "nutritions-protein"
+            )
           ),
           fat: parseInt(
-            select.options[select.selectedIndex].getAttribute("data-fat")
+            select.options[select.selectedIndex].getAttribute("nutritions-fat")
           ),
           sugar: parseInt(
-            select.options[select.selectedIndex].getAttribute("data-sugar")
+            select.options[select.selectedIndex].getAttribute(
+              "nutritions-sugar"
+            )
           ),
           calories: parseInt(
-            select.options[select.selectedIndex].getAttribute("data-calories")
+            select.options[select.selectedIndex].getAttribute(
+              "nutritions-calories"
+            )
           ),
         });
       });

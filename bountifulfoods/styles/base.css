@@ -211,3 +211,14 @@ nav ul.open {
 #instructions {
   height: 100px;
 }
+
+.fruit-select {
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}

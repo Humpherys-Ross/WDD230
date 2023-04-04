@@ -91,11 +91,11 @@ const assignments = [
     title: "Chamber of Commerce Weather API Integration",
     link: "chamber/index.html",
   },
-  {
-    week: "Final Project",
-    title: "Final Project",
-    link: "bountifulfoods/index.html",
-  },
+  // {
+  //   week: "Final Project",
+  //   title: "Final Project",
+  //   link: "bountifulfoods/index.html",
+  // },
   // Add more objects for additional assignments
 ];
 
