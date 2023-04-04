@@ -1,6 +1,13 @@
 const dataURL =
   "https://raw.githubusercontent.com/Humpherys-Ross/wdd230/main/bountifulfoods/scripts/data.json";
 
+const currentDate = new Date();
+const dataString = `${
+  currentDate.getMonth() + 1
+}/${currentDate.getDate()}/${currentDate.getFullYear()}`;
+const timeString = `${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`;
+const storageKey = `bountifulfoods-${dataString}-${timeString}`;
+
 fetch(dataURL)
   .then((response) => {
     return response.json();
@@ -14,7 +21,7 @@ fetch(dataURL)
 
     // Populate fruits dropdowns
     const fruitSelects = document.querySelectorAll(".fruit-select");
-    console.log(fruitSelects);
+    //console.log(fruitSelects);
     for (let i = 0; i < fruitSelects.length; i++) {
       for (let j = 0; j < fruits.length; j++) {
         const fruitOption = document.createElement("option");
@@ -39,7 +46,7 @@ fetch(dataURL)
         fruitOption.textContent = fruits[j].name;
         fruitSelects[i].appendChild(fruitOption);
       }
-      console.log(fruitSelects[i]);
+      //console.log(fruitSelects[i]);
     }
 
     // Handle form submission
@@ -94,6 +101,20 @@ fetch(dataURL)
         },
         { carbs: 0, protein: 0, fat: 0, sugar: 0, calories: 0 }
       );
+
+      // Format output
+      const outputData = {
+        name,
+        email,
+        phone,
+        fruitsSelected,
+        specialInstructions,
+        totals,
+        userAgent: window.navigator.userAgent,
+      };
+
+      // Save output to localStorage
+      localStorage.setItem(storageKey, JSON.stringify(outputData));
 
       // Format output
       const outputText = `

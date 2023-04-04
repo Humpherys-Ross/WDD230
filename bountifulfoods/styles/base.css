@@ -212,7 +212,73 @@ nav ul.open {
   height: 100px;
 }
 
-.fruit-select {
+#output {
+  margin: 50px auto;
+  width: 90%;
+  max-width: 700px;
+  background-color: var(--secondary-color);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#output h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: var(--tertiary-color);
+  font-family: var(--header-font);
+}
+
+#output p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--tertiary-color);
+  font-family: var(--body-font);
+}
+
+#output ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#output li {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: var(--tertiary-color);
+  font-family: var(--body-font);
+}
+
+#output li:first-child {
+  margin-top: 10px;
+}
+
+#output li:last-child {
+  margin-bottom: 10px;
+}
+
+#output button {
+  display: block;
+  margin: 20px auto 0;
+  background-color: var(--tertiary-color);
+  border: none;
+  color: white;
+  font-family: var(--body-font);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+#output button:hover {
+  background-color: var(--primary-color);
+}
+
+/* .fruit-select {
   background-color: #fff;
   color: #333;
   font-size: 16px;
@@ -221,4 +287,4 @@ nav ul.open {
   border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
-}
+} */
