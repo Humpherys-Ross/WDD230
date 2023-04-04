@@ -59,6 +59,25 @@
     <main>
       <h2>Orders</h2>
       <div id="output-container"></div>
+      <div class="weather">
+        <h3>Carlsbad Weather</h3>
+        <div class="weather-div">
+          <picture>
+            <img src="" alt="" id="weather-icon" />
+          </picture>
+          <h3 id="temp">
+            <span id="temperature"></span>
+            °F
+          </h3>
+        </div>
+        <h4 id="desc-temp"></h4>
+        <hr />
+        <p>
+          Wind Speed: <span id="speed"></span>
+          mph
+        </p>
+        <p>Wind Chill: <span id="windchill"></span></p>
+      </div>
     </main>
     <footer>
       <div class="footer-content">
@@ -83,5 +102,6 @@
     </footer>
     <script src="../bountifulfoods/scripts/scripts.js"></script>
     <script src="../bountifulfoods/scripts/orderSummary.js"></script>
+    <script src="../bountifulfoods/scripts/weather.js"></script>
   </body>
 </html>

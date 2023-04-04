@@ -1,4 +1,4 @@
-console.table(localStorage);
+//console.table(localStorage);
 
 // Get container element
 const container = document.querySelector("#output-container");
