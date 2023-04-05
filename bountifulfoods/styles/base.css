@@ -348,8 +348,10 @@ main {
 .weather h3 {
   margin-top: 1em;
   font-family: var(--header-font);
-  font-size: 1.5em;
+  font-size: 2em;
   color: var(--tertiary-color);
+  text-decoration: underline;
+  padding-bottom: 0.5em;
 }
 
 .weather h4 {
@@ -381,6 +383,12 @@ main {
   margin-right: 1em;
 }
 
+#humidity,
+h4#desc-temp {
+  font-size: 2em;
+  font-weight: 600;
+}
+
 .forecast {
   display: flex;
   justify-content: space-between;
@@ -400,8 +408,9 @@ main {
 }
 
 .forecast-day h4 {
-  font-size: 1em;
+  font-size: 1.5em;
   color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 .forecast-day h4 + picture {

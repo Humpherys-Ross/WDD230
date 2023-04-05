@@ -57,6 +57,7 @@ for (let i = 0; i < localStorage.length; i++) {
 
   const orderSummary = JSON.parse(localStorage.getItem(storageKey));
   console.log(orderSummary);
+
   // Create card
   const card = document.createElement("div");
   card.classList.add("card");
@@ -73,8 +74,6 @@ for (let i = 0; i < localStorage.length; i++) {
   const phone = document.createElement("p");
   phone.textContent = `Phone: ${orderSummary.phone}`;
 
-  // const fruitsSelected = document.createElement("p");
-  // fruitsSelected.textContent = `Fruits Selected: ${orderSummary.fruitsSelected}`;
   const fruitsSelected = document.createElement("p");
   let fruitsString = "Fruits Selected: ";
   for (let fruit of orderSummary.fruitsSelected) {

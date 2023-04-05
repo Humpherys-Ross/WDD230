@@ -20,9 +20,9 @@ apiFetch();
 
 function displayResults(data) {
   // update current weather information
-  document.getElementById("temperature").innerHTML = data.main.temp;
-  document.getElementById("humidity").innerHTML = data.main.humidity;
-  document.getElementById("desc-temp").innerHTML = data.weather[0].description;
+  document.getElementById("temperature").innerHTML = data.main.temp; // get the temperature
+  document.getElementById("humidity").innerHTML = data.main.humidity; // get the humidity
+  document.getElementById("desc-temp").innerHTML = data.weather[0].description; // get the description
   document.getElementById(
     "weather-icon"
   ).src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
@@ -51,7 +51,7 @@ apiForecast();
 function displayForecast(forecast) {
   for (let i = 0; i < 3; i++) {
     const forecastDay = forecast.list[i * 8]; // get the forecast for every 24 hours (8 * 3 = 24)
-    const date = new Date(forecastDay.dt * 1000); // convert Unix timestamp to JavaScript date
+    const date = new Date(forecastDay.dt * 1000); // convert timestamp to JavaScript date
     const dayOfWeek = date.toLocaleString("en-US", { weekday: "long" }); // format the day of the week
     const iconUrl = `https://openweathermap.org/img/w/${forecastDay.weather[0].icon}.png`; // get the URL of the weather icon
 
