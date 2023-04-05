@@ -37,4 +37,9 @@
     border-right: 1px solid #666;
     border-left: 1px solid #666;
   }
+  .about-content,
+  .map {
+    width: 100%;
+    float: none;
+  }
 }

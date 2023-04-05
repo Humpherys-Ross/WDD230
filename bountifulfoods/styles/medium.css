@@ -9,4 +9,14 @@
   .footer-content img {
     max-width: 75%;
   }
+  .about-content {
+    float: left;
+    width: 60%;
+    margin-right: 4%;
+  }
+
+  .map {
+    float: right;
+    width: 36%;
+  }
 }
