@@ -278,13 +278,109 @@ nav ul.open {
   background-color: var(--primary-color);
 }
 
-/* .fruit-select {
-  background-color: #fff;
-  color: #333;
-  font-size: 16px;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  outline: none;
-} */
+/* California weather card styling */
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+  border-radius: 20px;
+  padding: 20px;
+  font-family: var(--body-font);
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.weather h2 {
+  margin-bottom: 0;
+  font-family: var(--header-font);
+  font-size: 2em;
+  color: var(--tertiary-color);
+}
+
+.weather h3 {
+  margin-top: 1em;
+  font-family: var(--header-font);
+  font-size: 1.5em;
+  color: var(--tertiary-color);
+}
+
+.weather h4 {
+  margin: 0.5em 0;
+  font-size: 1em;
+  color: var(--tertiary-color);
+}
+
+.weather hr {
+  width: 100%;
+  margin: 1em 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.weather-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1em 0;
+}
+
+.weather-div picture {
+  margin-right: 1em;
+}
+
+.weather-div h2 {
+  margin-right: 1em;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecast-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 1em;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.forecast-day h4 {
+  font-size: 1em;
+  color: var(--secondary-color);
+}
+
+.forecast-day h4 + picture {
+  margin-top: 0.5em;
+}
+
+.forecast-day h4 + picture + h4 {
+  margin-top: 0.5em;
+}
+
+.forecast-day img {
+  max-width: 50px;
+}
+
+/* Responsive design */
+
+@media only screen and (max-width: 768px) {
+  .forecast {
+    flex-direction: column;
+  }
+
+  .forecast-day {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+}
