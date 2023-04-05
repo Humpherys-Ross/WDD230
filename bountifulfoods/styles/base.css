@@ -75,6 +75,41 @@ nav ul.open {
   font-family: var(--header-font);
 }
 
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+#output-container {
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+  border-radius: 20px;
+  padding: 20px;
+  font-family: var(--body-font);
+}
+
+#output-container h2 {
+  font-family: var(--header-font);
+  font-size: 2em;
+  color: var(--tertiary-color);
+}
+
+.card {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card p {
+  margin: 0.5em 0;
+  font-size: 1em;
+  color: var(--tertiary-color);
+}
+
 .footer-content {
   display: block;
   background-color: var(--tertiary-color);
@@ -278,8 +313,6 @@ nav ul.open {
   background-color: var(--primary-color);
 }
 
-/* California weather card styling */
-
 .weather {
   display: flex;
   flex-direction: column;
@@ -370,17 +403,4 @@ nav ul.open {
 
 .forecast-day img {
   max-width: 50px;
-}
-
-/* Responsive design */
-
-@media only screen and (max-width: 768px) {
-  .forecast {
-    flex-direction: column;
-  }
-
-  .forecast-day {
-    margin-right: 0;
-    margin-bottom: 1em;
-  }
 }

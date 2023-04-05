@@ -110,7 +110,7 @@ fetch(dataURL)
         fruitsSelected,
         specialInstructions,
         totals,
-        userAgent: window.navigator.userAgent,
+        // userAgent: window.navigator.userAgent,
       };
 
       // Save output to localStorage
