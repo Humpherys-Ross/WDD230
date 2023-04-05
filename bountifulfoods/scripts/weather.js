@@ -49,6 +49,7 @@ async function apiForecast() {
 apiForecast();
 
 function displayForecast(forecast) {
+  // update forecast information
   for (let i = 0; i < 3; i++) {
     const forecastDay = forecast.list[i * 8]; // get the forecast for every 24 hours (8 * 3 = 24)
     const date = new Date(forecastDay.dt * 1000); // convert timestamp to JavaScript date
