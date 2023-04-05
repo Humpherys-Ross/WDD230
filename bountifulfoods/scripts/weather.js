@@ -36,7 +36,7 @@ async function apiForecast() {
     const response = await fetch(url1);
     if (response.ok) {
       const forecast = await response.json();
-      console.log(forecast); // this is for testing the call
+      //console.log(forecast); // this is for testing the call
       displayForecast(forecast);
     } else {
       throw Error(await response.text());
