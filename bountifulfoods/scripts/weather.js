@@ -25,7 +25,7 @@ function displayResults(data) {
   document.getElementById("desc-temp").innerHTML = data.weather[0].description;
   document.getElementById(
     "weather-icon"
-  ).src = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  ).src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
 }
 
 const url1 =
