@@ -51,7 +51,7 @@ nav ul li a {
   text-decoration: none;
   padding: 0.8rem 2vw;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
-  font-size: large;
+  font-size: 2em;
 }
 
 nav ul li a:hover {
@@ -88,11 +88,20 @@ main {
   border-radius: 20px;
   padding: 20px;
   font-family: var(--body-font);
+  height: 400px;
+  overflow-y: scroll;
 }
 
 #output-container h2 {
   font-family: var(--header-font);
-  font-size: 2em;
+  font-size: 6em;
+  color: var(--tertiary-color);
+  text-decoration: underline;
+}
+
+#output-container h3 {
+  font-family: var(--header-font);
+  font-size: 3em;
   color: var(--tertiary-color);
 }
 
@@ -106,7 +115,8 @@ main {
 
 .card p {
   margin: 0.5em 0;
-  font-size: 1em;
+  font-size: 1.5em;
+  font-weight: 500;
   color: var(--tertiary-color);
 }
 
@@ -325,6 +335,7 @@ main {
   width: 80%;
   max-width: 400px;
   margin: 0 auto;
+  max-height: 500px;
 }
 
 .weather h2 {

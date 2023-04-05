@@ -50,8 +50,8 @@ for (let i = 0; i < localStorage.length; i++) {
     continue; // skip if it doesn't start with "bountifulfoods-"
   }
 
-  var tag = document.createElement("div");
-  var text = document.createTextNode(`Order ${orderCounter}`);
+  const tag = document.createElement("h3");
+  const text = document.createTextNode(`Order ${orderCounter}`);
   tag.appendChild(text);
   container.appendChild(tag);
 
